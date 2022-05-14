@@ -158,10 +158,10 @@ console.log(`height: ${data.height.toString()}, weight: ${data.weight.toString()
 
 // 2. Store the result of Step 1 and again convert height and weight to integer. Then calculate Pokemons BMI. Assume that weight and height are in in kg and meters consequently.
 // Formula for BMI : BMI = kg/m2
-let height = parseInt(data.height);
-let weight = parseInt(data.weight);
-let BMI = weight / (height * height)
-console.log('h', height, 'w', weight, 'BMI', BMI);
+let pokemonHeight = parseInt(data.height);
+let pokemonWeight = parseInt(data.weight);
+let BMI = pokemonWeight / (pokemonHeight * pokemonHeight)
+console.log('h', pokemonHeight, 'w', pokemonWeight, 'BMI', BMI);
 
 // 3. Store the name of Pokemon to a new variable. 
 // Then using new varibale calculate the length (word count) of Pokemons name and make it an upper case.
@@ -259,3 +259,26 @@ console.log("Shallow Copy List", shallowCopyFirst2Values);
 // 15. From base_stat values array replace first number with your name. HINT: Modify the original array
 data.stats[0].stat.name = "Murat";
 console.log('here', data.stats[0].stat.name);
+
+// 16. Console log keys and values of data object. 
+// HINT: return values can be an array or a string type. Use Object, Array methods or loop
+for (var key in data) {
+  console.log("key " + key + " has value " + data[key]);
+}
+
+// 17. From data show avatar, name, height and weight on the DOM.
+// To do that copy and paste below code: Don't worry we will learn DOM
+
+const avatar = document.querySelector('#pokemon-avatar');
+const pok_name = document.querySelector('#pokemon-name');
+const info = document.querySelector('#info');
+const name = data.name;
+const height = data.height;
+const weight = data.weight;
+const url = data.sprites.front_default;
+avatar.src = url;
+pok_name.innerHTML = name;
+info.innerHTML = `
+  <span> Height ${height}</span> -
+  <span> Weight ${weight}</span>
+`;
