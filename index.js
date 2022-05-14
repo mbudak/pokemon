@@ -174,3 +174,13 @@ let checkBulba = data.name.indexOf('bulba');
 console.log('checkBulba in name and position', data.name, checkBulba);
 
 
+// 5. Now cut first 2 characters of name and store as a new variable. 
+// Also get last 2 charaters of name and store as a new variable. 
+// At the end add this 2 variables and return a new name that consists of first 2 and last 2 characters of original name.
+// HINT: try to use string method
+
+let removedFirstTwoCharOfName = data.name.substring(2, data.name.length);
+console.log(`Removed First Two Char is : ${removedFirstTwoCharOfName}`);
+
+let lastTwoCharacterOfTheName = data.name.substring(data.name.length - 2, data.name.length);
+console.log(`Last Two Chars of the name is ${lastTwoCharacterOfTheName}`);
