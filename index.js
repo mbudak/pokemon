@@ -184,3 +184,9 @@ console.log(`Removed First Two Char is : ${removedFirstTwoCharOfName}`);
 
 let lastTwoCharacterOfTheName = data.name.substring(data.name.length - 2, data.name.length);
 console.log(`Last Two Chars of the name is ${lastTwoCharacterOfTheName}`);
+
+// 6. Now store new name variable into an array. And console to the result.
+let aName = [];
+aName.push(data.name);
+console.log('aName', aName);
+
