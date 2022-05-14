@@ -256,4 +256,6 @@ forShallowCopy.forEach(item => {
 });
 console.log("Shallow Copy List", shallowCopyFirst2Values);
 
-
+// 15. From base_stat values array replace first number with your name. HINT: Modify the original array
+data.stats[0].stat.name = "Murat";
+console.log('here', data.stats[0].stat.name);
