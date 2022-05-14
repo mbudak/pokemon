@@ -162,3 +162,10 @@ let height = parseInt(data.height);
 let weight = parseInt(data.weight);
 let BMI = weight / (height * height)
 console.log('h', height, 'w', weight, 'BMI', BMI);
+
+// 3. Store the name of Pokemon to a new variable. 
+// Then using new varibale calculate the length (word count) of Pokemons name and make it an upper case.
+var newPokemon = Object.assign({}, data)
+var wordCount = newPokemon.name.split(' ').length;
+console.log(`wordCount: ${wordCount} and Name is UpperCase : ${newPokemon.name.toUpperCase()}`);
+
