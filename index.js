@@ -169,3 +169,8 @@ var newPokemon = Object.assign({}, data)
 var wordCount = newPokemon.name.split(' ').length;
 console.log(`wordCount: ${wordCount} and Name is UpperCase : ${newPokemon.name.toUpperCase()}`);
 
+// 4. Make sure name contains word "bulba"
+let checkBulba = data.name.indexOf('bulba');
+console.log('checkBulba in name and position', data.name, checkBulba);
+
+
