@@ -230,3 +230,13 @@ console.log('Check it if it is put it back', data.abilities.length);
 data.stats.forEach(item => {
   console.log('base stat: ', item.base_stat);
 })
+
+// 12. Store Step 11 values into new array and filter and console the values that above 47.
+var base_stats = [];
+data.stats.forEach(item => {
+  base_stats.push(item.base_stat);
+});
+
+base_stats.filter(item => item > 47).forEach(item => {
+  console.log('filtered above 47 -> ', item);
+})
