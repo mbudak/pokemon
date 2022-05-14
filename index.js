@@ -244,4 +244,16 @@ base_stats.filter(item => item > 47).forEach(item => {
 // 13. Reverse an array that contained base_stat values and return a string combining all these values.
 console.log('reverse and converted to string', base_stats.reverse().join(", "));
 
+// 14. From base_stat values array return shallow copy only 2 first values as an array.
+var forShallowCopy = [...data.stats];
+shallowCopyFirst2Values = [];
+forShallowCopy.forEach(item => {
+  shallowCopyFirst2Values.push(
+    { 
+      "base_stat": item.base_stat, 
+      "effort": item.effort
+    });
+});
+console.log("Shallow Copy List", shallowCopyFirst2Values);
+
 
