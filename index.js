@@ -209,3 +209,21 @@ console.log('isArray', checkIsArray);
 // 9. From abilities array get the last ability (object) and console the name of it.
 // zero index
 console.log('Last Name of the abilities', data.abilities[data.abilities.length - 1].ability.name);
+
+// 10. Now take that last ability (object) and again put it back to abilities array.
+// default values
+console.log('original abilities length', data.abilities.length);
+// make a copy
+var tempObject = data.abilities[data.abilities.length -1];
+console.log('copied object is, ', tempObject)
+
+// Remove the last object
+data.abilities.pop(data.abilities.length -1);
+console.log('last ability removed and new length is ', data.abilities.length);
+
+// Put it back
+data.abilities.push(tempObject);
+// Check if it is there
+console.log('Check it if it is put it back', data.abilities.length);
+
+
