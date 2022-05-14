@@ -201,3 +201,7 @@ data.types.forEach(item => {
   }
   // console.log('item', item.type.name);
 });
+
+// 8 Make sure/check abilites is an array type. Abilites can be found from same data object.
+var checkIsArray = Array.isArray(data.abilities);
+console.log('isArray', checkIsArray);
