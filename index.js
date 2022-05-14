@@ -240,3 +240,8 @@ data.stats.forEach(item => {
 base_stats.filter(item => item > 47).forEach(item => {
   console.log('filtered above 47 -> ', item);
 })
+
+// 13. Reverse an array that contained base_stat values and return a string combining all these values.
+console.log('reverse and converted to string', base_stats.reverse().join(", "));
+
+
