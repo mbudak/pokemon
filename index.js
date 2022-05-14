@@ -205,3 +205,7 @@ data.types.forEach(item => {
 // 8 Make sure/check abilites is an array type. Abilites can be found from same data object.
 var checkIsArray = Array.isArray(data.abilities);
 console.log('isArray', checkIsArray);
+
+// 9. From abilities array get the last ability (object) and console the name of it.
+// zero index
+console.log('Last Name of the abilities', data.abilities[data.abilities.length - 1].ability.name);
