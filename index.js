@@ -190,3 +190,14 @@ let aName = [];
 aName.push(data.name);
 console.log('aName', aName);
 
+// 7. Console log the names of each "type" that is inside types array in original data. 
+// Make sure you see "poison" and "grass" as a result.
+data.types.forEach(item => {
+  if (item.type.name === "poison") {
+    console.log('poison found');
+  }
+  if (item.type.name === "grass") {
+    console.log('grass found');
+  }
+  // console.log('item', item.type.name);
+});
