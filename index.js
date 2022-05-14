@@ -152,3 +152,13 @@ let data = {
   ],
   weight: 69,
 };
+
+// 1. Get the height and weight of Pokemon and return them in String format
+console.log(`height: ${data.height.toString()}, weight: ${data.weight.toString()}`)
+
+// 2. Store the result of Step 1 and again convert height and weight to integer. Then calculate Pokemons BMI. Assume that weight and height are in in kg and meters consequently.
+// Formula for BMI : BMI = kg/m2
+let height = parseInt(data.height);
+let weight = parseInt(data.weight);
+let BMI = weight / (height * height)
+console.log('h', height, 'w', weight, 'BMI', BMI);
