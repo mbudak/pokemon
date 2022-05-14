@@ -226,4 +226,7 @@ data.abilities.push(tempObject);
 // Check if it is there
 console.log('Check it if it is put it back', data.abilities.length);
 
-
+// 11. Loop throgh the stats data and console the base_stat values
+data.stats.forEach(item => {
+  console.log('base stat: ', item.base_stat);
+})
